@@ -11,10 +11,16 @@ import UIKit
 class ViewController: UIViewController {
 
     var timer = NSTimer()
+    var counter = 0
+    
+    func showResult() {
+        counter++
+        println("\(counter)")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("addTime"), userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("showResult"), userInfo: nil, repeats: true)
     }
 
     override func didReceiveMemoryWarning() {
