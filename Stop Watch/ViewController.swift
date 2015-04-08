@@ -26,6 +26,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func stopTimer(sender: AnyObject) {
+        timer.invalidate()
+        timerLabel.text = "0"
+        counter = 0
     }
     
     override func viewDidLoad() {
