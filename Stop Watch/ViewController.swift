@@ -13,14 +13,23 @@ class ViewController: UIViewController {
     var timer = NSTimer()
     var counter = 0
     
+    @IBOutlet weak var timerLabel: UILabel!
+    
     func showResult() {
         counter++
         println("\(counter)")
+        timerLabel.text = String(counter)
+    }
+    
+    @IBAction func playTimer(sender: AnyObject) {
+        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("showResult"), userInfo: nil, repeats: true)
+    }
+    
+    @IBAction func stopTimer(sender: AnyObject) {
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("showResult"), userInfo: nil, repeats: true)
     }
 
     override func didReceiveMemoryWarning() {
