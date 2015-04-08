@@ -34,11 +34,19 @@
                                     <barButtonItem title="Item" systemItem="refresh" id="tVU-yY-7RN"/>
                                 </items>
                             </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2z-3P-ge7">
+                                <rect key="frame" x="122" y="180" width="172" height="86"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="z2z-3P-ge7" secondAttribute="centerX" id="0wS-PA-dUD"/>
                             <constraint firstItem="96q-L9-ZCv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="1c8-4s-LRd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="96q-L9-ZCv" secondAttribute="trailing" constant="-16" id="HEp-yj-MJi"/>
+                            <constraint firstAttribute="centerY" secondItem="z2z-3P-ge7" secondAttribute="centerY" id="I1a-sj-aDe"/>
                             <constraint firstItem="9CO-ec-i2U" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="RtW-pp-vok"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="96q-L9-ZCv" secondAttribute="bottom" id="cJn-A5-8kH"/>
                             <constraint firstItem="9CO-ec-i2U" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="duT-Ba-nC5"/>
