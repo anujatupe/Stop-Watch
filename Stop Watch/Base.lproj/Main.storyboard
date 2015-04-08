@@ -37,7 +37,11 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="96q-L9-ZCv">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <items>
-                                    <barButtonItem title="Item" systemItem="pause" id="hDG-8r-liI"/>
+                                    <barButtonItem title="Item" systemItem="pause" id="hDG-8r-liI">
+                                        <connections>
+                                            <action selector="pauseTimer:" destination="vXZ-lx-hvc" id="cTy-km-GRy"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="jFq-is-m1z"/>
                                     <barButtonItem title="Item" systemItem="refresh" id="tVU-yY-7RN"/>
                                 </items>

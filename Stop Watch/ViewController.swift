@@ -31,6 +31,10 @@ class ViewController: UIViewController {
         counter = 0
     }
     
+    @IBAction func pauseTimer(sender: AnyObject) {
+        timer.invalidate()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
